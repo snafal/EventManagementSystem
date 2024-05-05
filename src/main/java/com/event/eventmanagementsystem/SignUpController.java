@@ -1,4 +1,4 @@
 package com.event.eventmanagementsystem;
 
-public class SignInController {
+public class SignUpController {
 }

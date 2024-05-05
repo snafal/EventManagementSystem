@@ -9,16 +9,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="481.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/signIn.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/signIn.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.SignUpController">
    <children>
-      <AnchorPane layoutX="66.0" layoutY="41.0" prefHeight="313.0" prefWidth="347.0" styleClass="rootColour" stylesheets="@StyleSheets/signIn.css">
+      <AnchorPane layoutX="145.0" layoutY="88.0" prefHeight="424.0" prefWidth="510.0" styleClass="rootColour" stylesheets="@StyleSheets/signIn.css">
          <children>
-            <Label layoutX="90.0" layoutY="38.0" text="SIGN UP" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="175.0" layoutY="55.0" text="SIGN UP" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Monospaced Bold" size="38.0" />
                </font>
             </Label>
-            <VBox layoutX="90.0" layoutY="95.0" prefHeight="106.0" prefWidth="160.0">
+            <VBox layoutX="140.0" layoutY="140.0" prefHeight="174.0" prefWidth="230.0">
                <children>
                   <TextField prefHeight="39.0" prefWidth="160.0" promptText="FULL NAME :               " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css">
                      <opaqueInsets>
@@ -26,13 +26,13 @@
                      </opaqueInsets></TextField>
                   <TextField prefHeight="26.0" prefWidth="81.0" promptText="E-MAIL :                    " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css" />
                   <TextField prefHeight="26.0" prefWidth="81.0" promptText="PASSWORD :              " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css" />
-                  <TextField prefHeight="26.0" prefWidth="81.0" promptText="CONFIRM PASSWORD :               " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css" />
+                  <TextField prefHeight="43.0" prefWidth="174.0" promptText="CONFIRM PASSWORD :               " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css" />
                </children>
                <opaqueInsets>
                   <Insets bottom="2.0" />
                </opaqueInsets>
             </VBox>
-            <JFXButton buttonType="RAISED" layoutX="124.0" layoutY="257.0" styleClass="buttonSignUp" stylesheets="@StyleSheets/signIn.css" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton buttonType="RAISED" layoutX="209.0" layoutY="338.0" styleClass="buttonSignUp" stylesheets="@StyleSheets/signIn.css" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Monospaced Regular" size="16.0" />
                </font>
