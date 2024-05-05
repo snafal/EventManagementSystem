@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="colorBackground" stylesheets="@StyleSheets/app.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.AppController">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="46.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="274.0" style="-fx-background-radius: 50 30 30 30;" styleClass="colorBackground2" stylesheets="@StyleSheets/app.css">
+         <children>
+            <TextField layoutX="57.0" layoutY="126.0" opacity="0.82" prefHeight="27.0" prefWidth="149.0" promptText="User Name">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="57.0" layoutY="172.0" prefHeight="27.0" prefWidth="150.0" promptText="Password">
+               <font>
+                  <Font name="Cambria" size="17.0" />
+               </font>
+            </TextField>
+            <JFXButton buttonType="RAISED" layoutX="156.0" layoutY="220.0" style="-fx-background-radius: 30 10 30 30;" text="Login" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Ebrima" size="12.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="210.0" layoutY="220.0" style="-fx-background-radius: 30 10 30 30;" text="Signup" textAlignment="CENTER" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Ebrima" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="104.0" layoutY="275.0" text="Team 404 " textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Console" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="35.0" text="SYNTHIX" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="169.0" layoutY="45.0" text="events" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="312.0" layoutY="46.0" prefHeight="343.0" prefWidth="274.0">
+         <children>
+            <ImageView accessibleRole="BUTTON" fitHeight="341.0" fitWidth="274.0" layoutY="-1.0">
+               <image>
+                  <Image url="@Media/image2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="565.0" layoutY="-1.0" minWidth="34.0" onAction="#handleCloseButtonAction" prefHeight="30.0" prefWidth="34.0" ripplerFill="BLACK" styleClass="colorBackground" text="X" visible="false" />
+   </children>
+</AnchorPane>

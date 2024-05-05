@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="396.0" prefWidth="481.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/signIn.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="66.0" layoutY="41.0" prefHeight="313.0" prefWidth="347.0" styleClass="rootColour" stylesheets="@StyleSheets/signIn.css">
+         <children>
+            <Label layoutX="90.0" layoutY="38.0" text="SIGN UP" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Bold" size="38.0" />
+               </font>
+            </Label>
+            <VBox layoutX="90.0" layoutY="95.0" prefHeight="106.0" prefWidth="160.0">
+               <children>
+                  <TextField prefHeight="39.0" prefWidth="160.0" promptText="FULL NAME :               " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css">
+                     <opaqueInsets>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="10.0" />
+                     </opaqueInsets></TextField>
+                  <TextField prefHeight="26.0" prefWidth="81.0" promptText="E-MAIL :                    " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css" />
+                  <TextField prefHeight="26.0" prefWidth="81.0" promptText="PASSWORD :              " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css" />
+                  <TextField prefHeight="26.0" prefWidth="81.0" promptText="CONFIRM PASSWORD :               " styleClass="textFilds" stylesheets="@StyleSheets/signIn.css" />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="2.0" />
+               </opaqueInsets>
+            </VBox>
+            <JFXButton buttonType="RAISED" layoutX="124.0" layoutY="257.0" styleClass="buttonSignUp" stylesheets="@StyleSheets/signIn.css" text="Sign Up" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Monospaced Regular" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
