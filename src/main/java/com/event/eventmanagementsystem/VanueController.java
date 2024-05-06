@@ -9,23 +9,23 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
-public class DashBoardController {
-
+public class VanueController {
     @FXML
     public void backToLogin(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("app.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("app.fxml")));
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
 
     }
 
-    @FXML
-    public void nextButtonEvent(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("vanue.fxml"));
+    public void getReportButton(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("report.fxml")));
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        stage .setScene(new Scene(root));
+        stage.setScene(new Scene(root));
         stage.show();
+
     }
 }

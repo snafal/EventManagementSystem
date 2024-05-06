@@ -17,3 +17,11 @@
     -fx-background-color: rgba(220, 0, 253, 0.25);
     -fx-background-radius: 50px 50px 50px 50px;
 }
+.button1{
+    -fx-background-color: linear-gradient( to right top,#5ab2f7, #12cff3);
+}
+
+
+.text-field1{
+    -fx-prompt-text-fill: black;
+}

@@ -7,14 +7,14 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/dashbord.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/dashbord.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.DashBoardController">
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="359.0" styleClass="rootColour" stylesheets="@StyleSheets/dashbord.css">
          <children>
@@ -38,22 +38,23 @@
                   <Font name="Old English Text MT" size="34.0" />
                </font>
             </Label>
+            <JFXButton layoutX="139.0" layoutY="543.0" onAction="#backToLogin" styleClass="button1" stylesheets="@StyleSheets/dashbord.css" text="LOG OUT" textFill="WHITE" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="375.0" layoutY="21.0" prefHeight="558.0" prefWidth="410.0" styleClass="overlay" stylesheets="@StyleSheets/dashbord.css">
          <children>
-            <Label layoutX="45.0" layoutY="46.0" text="Select Event your category" textFill="#403f3f">
+            <Label layoutX="40.0" layoutY="24.0" text="Select Event category" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
-            <JFXComboBox fx:id="eventCategory" layoutX="164.0" layoutY="103.0" prefHeight="34.0" prefWidth="200.0" promptText="Category" />
-            <Label layoutX="45.0" layoutY="159.0" text="Select Event " textFill="#403f3f">
+            <JFXComboBox fx:id="eventCategory" layoutX="158.0" layoutY="65.0" prefHeight="34.0" prefWidth="200.0" promptText="Category" />
+            <Label layoutX="40.0" layoutY="118.0" text="Select Event " textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
-            <JFXComboBox fx:id="eventCategory1" layoutX="164.0" layoutY="216.0" prefHeight="34.0" prefWidth="200.0" promptText="Event" />
+            <JFXComboBox fx:id="eventCategory1" layoutX="158.0" layoutY="146.0" prefHeight="34.0" prefWidth="200.0" promptText="Event" />
             <Label layoutX="45.0" layoutY="286.0" text="Pick your Budget Range" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
@@ -70,22 +71,28 @@
                   <String fx:value="date-picker-calendar" />
                </styleClass>
             </DatePicker>
-            <JFXRadioButton layoutX="164.0" layoutY="380.0" prefHeight="18.0" prefWidth="103.0" text="&lt; LKR 5,00,000">
+            <JFXRadioButton layoutX="119.0" layoutY="380.0" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 5,00,000">
                <toggleGroup>
                   <ToggleGroup fx:id="budgetRange" />
                </toggleGroup>
             </JFXRadioButton>
-            <JFXRadioButton layoutX="164.0" layoutY="331.0" prefHeight="18.0" prefWidth="103.0" text="&lt; LKR 25,000" toggleGroup="$budgetRange" />
-            <JFXRadioButton layoutX="282.0" layoutY="380.0" prefHeight="18.0" prefWidth="103.0" text="LKR 5,00,000 +" toggleGroup="$budgetRange" />
-            <JFXRadioButton layoutX="282.0" layoutY="331.0" prefHeight="18.0" prefWidth="103.0" text="&lt; LKR 1,00,000" toggleGroup="$budgetRange" />
-            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="154.0" layoutY="491.0" prefHeight="42.0" prefWidth="122.0" ripplerFill="#c021cf7c" text="Next">
+            <JFXRadioButton layoutX="119.0" layoutY="331.0" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 25,000" toggleGroup="$budgetRange" />
+            <JFXRadioButton layoutX="256.0" layoutY="380.0" prefHeight="18.0" prefWidth="122.0" text="LKR 5,00,000 +" toggleGroup="$budgetRange" />
+            <JFXRadioButton layoutX="256.0" layoutY="331.0" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 1,00,000" toggleGroup="$budgetRange" />
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="154.0" layoutY="491.0" onAction="#nextButtonEvent" prefHeight="42.0" prefWidth="122.0" ripplerFill="#c021cf7c" text="Next">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <font>
-                  <Font name="Monotype Corsiva" size="28.0" />
+                  <Font name="Copperplate Gothic Light" size="28.0" />
                </font>
             </JFXButton>
+            <Label layoutX="40.0" layoutY="206.0" text="Capacity (attendees)" textFill="#403f3f">
+               <font>
+                  <Font name="Impact" size="22.0" />
+               </font>
+            </Label>
+            <TextField layoutX="160.0" layoutY="241.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter Count" styleClass="text-field1" stylesheets="@StyleSheets/dashbord.css" />
          </children>
       </AnchorPane>
    </children>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -9,18 +8,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/vanue.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.VanueController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/report.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.ReportController">
    <children>
-      <AnchorPane prefHeight="600.0" prefWidth="359.0" styleClass="rootColour" stylesheets="@StyleSheets/vanue.css">
+      <AnchorPane prefHeight="600.0" prefWidth="359.0" styleClass="rootColour" stylesheets="@StyleSheets/report.css">
          <children>
-            <Label alignment="CENTER" layoutX="50.0" layoutY="73.0" prefHeight="28.0" prefWidth="259.0" text="Welcome " textAlignment="CENTER" textFill="#403f3f">
+            <Label alignment="CENTER" layoutX="50.0" layoutY="73.0" prefHeight="28.0" prefWidth="259.0" text="Thank you" textAlignment="CENTER" textFill="#403f3f">
                <font>
                   <Font name="Lucida Handwriting Italic" size="26.0" />
                </font>
             </Label>
             <ImageView fitHeight="330.0" fitWidth="397.0" layoutX="7.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Media/venue.png" />
+                  <Image url="@Media/ThankYou.png" />
                </image>
             </ImageView>
             <Label alignment="CENTER" layoutX="50.0" layoutY="485.0" prefHeight="28.0" prefWidth="259.0" text="Team 404" textAlignment="CENTER" textFill="#403f3f">
@@ -42,19 +41,12 @@
       </AnchorPane>
       <AnchorPane layoutX="375.0" layoutY="21.0" prefHeight="558.0" prefWidth="410.0" styleClass="overlay" stylesheets="@StyleSheets/dashbord.css">
          <children>
-            <Label layoutX="45.0" layoutY="46.0" text="Select Venue" textFill="#403f3f">
+            <Label layoutX="45.0" layoutY="46.0" text="Your Bill" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
-            <JFXComboBox fx:id="eventCategory" layoutX="176.0" layoutY="103.0" prefHeight="34.0" prefWidth="200.0" promptText="Venues" />
-            <Label layoutX="45.0" layoutY="159.0" text="Entertainments" textFill="#403f3f">
-               <font>
-                  <Font name="Impact" size="22.0" />
-               </font>
-            </Label>
-            <JFXComboBox fx:id="eventCategory1" layoutX="176.0" layoutY="216.0" prefHeight="34.0" prefWidth="200.0" promptText="Entertainments" />
-            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="118.0" layoutY="501.0" onAction="#getReportButton" prefHeight="42.0" prefWidth="173.0" ripplerFill="#c021cf7c" text="Generate report">
+            <JFXButton fx:id="doneButton" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="118.0" layoutY="501.0" onAction="#handleCloseButtonAction" prefHeight="42.0" prefWidth="173.0" ripplerFill="#c021cf7c" text="Done">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -62,18 +54,11 @@
                   <Font name="Calibri" size="19.0" />
                </font>
             </JFXButton>
-            <Label layoutX="45.0" layoutY="279.0" text="Photography" textFill="#403f3f">
+            <Label layoutX="161.0" layoutY="98.0" prefHeight="34.0" prefWidth="209.0" text="Your Bill" textFill="#403f3f">
                <font>
-                  <Font name="Impact" size="22.0" />
+                  <Font name="Bookshelf Symbol 7" size="22.0" />
                </font>
             </Label>
-            <JFXComboBox fx:id="eventCategory11" layoutX="176.0" layoutY="335.0" prefHeight="34.0" prefWidth="200.0" promptText="Media" />
-            <Label layoutX="46.0" layoutY="382.0" text="Logistics" textFill="#403f3f">
-               <font>
-                  <Font name="Impact" size="22.0" />
-               </font>
-            </Label>
-            <JFXComboBox fx:id="eventCategory111" layoutX="176.0" layoutY="439.0" prefHeight="34.0" prefWidth="200.0" promptText="Logistics" />
          </children>
       </AnchorPane>
    </children>

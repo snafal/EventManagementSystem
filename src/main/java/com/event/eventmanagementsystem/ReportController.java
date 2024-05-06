@@ -6,15 +6,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
-public class DashBoardController {
+public class ReportController {
 
     @FXML
     public void backToLogin(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("app.fxml"));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("app.fxml")));
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
@@ -22,10 +24,11 @@ public class DashBoardController {
     }
 
     @FXML
-    public void nextButtonEvent(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("vanue.fxml"));
-        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        stage .setScene(new Scene(root));
-        stage.show();
+    private Button doneButton;
+
+    @FXML
+    protected void handleCloseButtonAction(ActionEvent event) {
+        Stage stage = (Stage) doneButton.getScene().getWindow();
+        stage.close();
     }
 }
