@@ -1,7 +1,8 @@
 module com.event.eventmanagementsystem {
     requires javafx.controls;
     requires javafx.fxml;
-
+    requires java.sql;
+    requires mysql.connector.java;
 
 
     opens com.event.eventmanagementsystem to javafx.fxml;

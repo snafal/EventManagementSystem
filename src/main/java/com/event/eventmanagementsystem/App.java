@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-//import javafx.stage.StageStyle;
 
 import java.util.Objects;
 
@@ -23,9 +22,6 @@ public class App extends Application {
         primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Event Management System");
         primaryStage.show();
-
-
-
     }
     public static void main(String[] args) {
         launch();

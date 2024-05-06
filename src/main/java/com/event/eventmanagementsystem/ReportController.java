@@ -28,6 +28,7 @@ public class ReportController {
 
     @FXML
     protected void handleCloseButtonAction(ActionEvent event) {
+        event.consume();
         Stage stage = (Stage) doneButton.getScene().getWindow();
         stage.close();
     }
