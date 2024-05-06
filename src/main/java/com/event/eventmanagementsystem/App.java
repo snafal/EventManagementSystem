@@ -6,18 +6,20 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
+//import javafx.stage.StageStyle;
+
+import java.util.Objects;
 
 public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("app.fxml"));
-        Scene scene = new Scene(root,600,400);
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("app.fxml")));
+        Scene scene = new Scene(root,800,600);
         primaryStage.setScene(scene);
         //primaryStage.initStyle(StageStyle.TRANSPARENT);
         primaryStage.setResizable(false);
-        Image icon = new Image(getClass().getResourceAsStream("/com/event/eventmanagementsystem/Media/icon.png"));
+        Image icon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/com/event/eventmanagementsystem/Media/icon.png")));
         primaryStage.getIcons().add(icon);
         primaryStage.setTitle("Event Management System");
         primaryStage.show();

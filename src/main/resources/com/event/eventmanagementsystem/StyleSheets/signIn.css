@@ -1,9 +1,9 @@
 .rootColour{
-    -fx-background-color: linear-gradient( to right top,#facd68, #fc76b3);
+    -fx-background-color: linear-gradient( to right top,#40c9ff, #e81cff);
     -fx-background-radius: 0 100px 20px 20px;
 }
 .mainAncorPane{
-    -fx-background-color: linear-gradient( to right top,#facd68, #fc76b3);
+    -fx-background-color: linear-gradient( to right top,#40c9ff, #e81cff);
     -fx-background-radius: 10px 10px 10px;
 }
 .textFilds{

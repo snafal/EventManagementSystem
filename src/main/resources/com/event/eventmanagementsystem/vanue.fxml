@@ -8,8 +8,6 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ToggleGroup?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -20,22 +18,7 @@
          <children>
             <Label alignment="CENTER" layoutX="50.0" layoutY="73.0" prefHeight="28.0" prefWidth="259.0" text="Welcome " textAlignment="CENTER" textFill="#403f3f">
                <font>
-                  <Font name="Old English Text MT" size="34.0" />
-               </font>
-            </Label>
-            <ImageView fitHeight="331.0" fitWidth="359.0" layoutX="14.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Media/_5b9f7a4f-24ba-497c-99e2-4cb7a0d34126-removebg-preview.png" />
-               </image>
-            </ImageView>
-            <Label alignment="CENTER" layoutX="40.0" layoutY="438.0" prefHeight="28.0" prefWidth="279.0" text="Crafting Memorable Moments" textAlignment="CENTER" textFill="#403f3f">
-               <font>
-                  <Font name="Lucida Handwriting Italic" size="15.0" />
-               </font>
-            </Label>
-            <Label alignment="CENTER" layoutX="49.0" layoutY="486.0" prefHeight="28.0" prefWidth="259.0" text="Team 404" textAlignment="CENTER" textFill="#403f3f">
-               <font>
-                  <Font name="Old English Text MT" size="34.0" />
+                  <Font name="Lucida Handwriting Italic" size="26.0" />
                </font>
             </Label>
          </children>
