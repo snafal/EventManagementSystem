@@ -74,10 +74,10 @@ public class AppController {
         DataBaseConnection connectNow = new DataBaseConnection();
         Connection connectDB = connectNow.getDatabaseLink();
 
-        String varifyLogin="SELECT count(1) FROM user where userName = '"+userName.getText()+"' and password ='"+password.getText()+"'";
+        String verifyLogin="SELECT count(1) FROM user where userName = '"+userName.getText()+"' and password ='"+password.getText()+"'";
         try {
             Statement stmt = connectDB.createStatement();
-            ResultSet rs = stmt.executeQuery(varifyLogin);
+            ResultSet rs = stmt.executeQuery(verifyLogin);
 
             while(rs.next()){
                 if(rs.getInt(1)==1){

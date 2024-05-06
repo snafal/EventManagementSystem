@@ -3,6 +3,8 @@ module com.event.eventmanagementsystem {
     requires javafx.fxml;
     requires java.sql;
     requires mysql.connector.java;
+    requires com.jfoenix;
+    requires java.desktop;
 
 
     opens com.event.eventmanagementsystem to javafx.fxml;

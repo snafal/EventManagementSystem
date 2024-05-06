@@ -48,13 +48,13 @@
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
-            <JFXComboBox fx:id="eventCategory" layoutX="158.0" layoutY="65.0" prefHeight="34.0" prefWidth="200.0" promptText="Category" />
+            <JFXComboBox fx:id="eventCategorymenu" layoutX="158.0" layoutY="65.0" onAction="#setEventMenu" onInputMethodTextChanged="#setEventMenu" onScrollFinished="#setEventMenu" prefHeight="34.0" prefWidth="200.0" promptText="Category" />
             <Label layoutX="40.0" layoutY="118.0" text="Select Event " textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
-            <JFXComboBox fx:id="eventCategory1" layoutX="158.0" layoutY="146.0" prefHeight="34.0" prefWidth="200.0" promptText="Event" />
+            <JFXComboBox fx:id="eventmenu" layoutX="158.0" layoutY="146.0" prefHeight="34.0" prefWidth="200.0" promptText="Event" />
             <Label layoutX="45.0" layoutY="286.0" text="Pick your Budget Range" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
@@ -65,20 +65,20 @@
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
-            <DatePicker layoutX="159.0" layoutY="448.0" stylesheets="@StyleSheets/dashbord.css">
+            <DatePicker fx:id="datePicker" layoutX="159.0" layoutY="448.0" onAction="#getDate" stylesheets="@StyleSheets/dashbord.css">
                <styleClass>
                   <String fx:value="calendar-cell" />
                   <String fx:value="date-picker-calendar" />
                </styleClass>
             </DatePicker>
-            <JFXRadioButton layoutX="119.0" layoutY="380.0" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 5,00,000">
+            <JFXRadioButton fx:id="radioButton3" layoutX="119.0" layoutY="380.0" onAction="#getbudget" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 5,00,000">
                <toggleGroup>
                   <ToggleGroup fx:id="budgetRange" />
                </toggleGroup>
             </JFXRadioButton>
-            <JFXRadioButton layoutX="119.0" layoutY="331.0" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 25,000" toggleGroup="$budgetRange" />
-            <JFXRadioButton layoutX="256.0" layoutY="380.0" prefHeight="18.0" prefWidth="122.0" text="LKR 5,00,000 +" toggleGroup="$budgetRange" />
-            <JFXRadioButton layoutX="256.0" layoutY="331.0" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 1,00,000" toggleGroup="$budgetRange" />
+            <JFXRadioButton fx:id="radioButton1" layoutX="119.0" layoutY="331.0" onAction="#getbudget" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 25,000" toggleGroup="$budgetRange" />
+            <JFXRadioButton fx:id="radioButton4" layoutX="256.0" layoutY="380.0" onAction="#getbudget" prefHeight="18.0" prefWidth="122.0" text="LKR 5,00,000 +" toggleGroup="$budgetRange" />
+            <JFXRadioButton fx:id="radioButton2" layoutX="256.0" layoutY="331.0" onAction="#getbudget" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 1,00,000" toggleGroup="$budgetRange" />
             <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" defaultButton="true" layoutX="154.0" layoutY="491.0" onAction="#nextButtonEvent" prefHeight="42.0" prefWidth="122.0" ripplerFill="#c021cf7c" text="Next">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -92,7 +92,7 @@
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
-            <TextField layoutX="160.0" layoutY="241.0" prefHeight="26.0" prefWidth="200.0" promptText="Enter Count" styleClass="text-field1" stylesheets="@StyleSheets/dashbord.css" />
+            <TextField fx:id="capacityTextfild" layoutX="160.0" layoutY="241.0" onAction="#getAttendence" prefHeight="26.0" prefWidth="200.0" promptText="Enter Count" styleClass="text-field1" stylesheets="@StyleSheets/dashbord.css" />
          </children>
       </AnchorPane>
    </children>
