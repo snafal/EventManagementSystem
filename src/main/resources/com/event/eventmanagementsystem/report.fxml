@@ -125,8 +125,11 @@
                   <Insets bottom="100.0" />
                </opaqueInsets>
             </VBox>
-            <JFXButton layoutX="303.0" layoutY="148.0" onAction="#repot" text="click heare" underline="true" />
-            <Label fx:id="hi" layoutX="254.0" layoutY="484.0" text="Label" />
+            <JFXButton layoutX="261.0" layoutY="138.0" onAction="#repot" styleClass="button1" text="clickhere" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
          </children>
       </AnchorPane>
    </children>

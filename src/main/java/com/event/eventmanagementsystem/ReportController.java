@@ -56,7 +56,7 @@ public class ReportController {
         price2 = entertainment;
         price3 = photograpy;
         price4 = logistics;
-        
+
         //
 
         /*
@@ -72,10 +72,10 @@ public class ReportController {
 
 
     public void repot(ActionEvent event) throws IOException {
-        price1  = 8000;
-        price2  = 6000;
-        price3  = 4000;
-        price4  = 3000;
+        price1  = 80750;
+        price2  = 65000;
+        price3  = 38000;
+        price4  = 16000;
         System.out.println(price1);
         Venuebill.setText(Integer.toString(price1));
         Entertainmentsbill.setText(Integer.toString(price2));

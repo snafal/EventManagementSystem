@@ -47,7 +47,7 @@ public class AppController {
         if(userName.getText().isBlank() || password.getText().isBlank()){
             errorMessagelable.setText("Please enter Username and Password");
         }else{
-            //validateUser();
+            validateUser();
             errorMessagelable.setText("Welcome to the Event Management System!");
             if(Objects.equals(errorMessagelable.getText(), "Welcome to the Event Management System!")){
                 Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("dashBoard.fxml")));
