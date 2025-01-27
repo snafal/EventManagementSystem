@@ -1,20 +1,26 @@
+/* Root pane background with a gradient color and rounded corners on specific edges */
 .rootColour{
     -fx-background-color: linear-gradient( to right top,#40c9ff, #e81cff);
     -fx-background-radius: 0 100px 20px 20px;
 }
+
+/* Main AnchorPane with a gradient background and uniform rounded corners */
 .mainAncorPane{
     -fx-background-color: linear-gradient( to right top,#40c9ff, #e81cff);
-    -fx-background-radius: 10px 10px 10px;
+    -fx-background-radius: 10px 10px 10px;/* All corners rounded equally */
 }
+
+/* Text fields with padding, transparent background, and white prompt text */
 .textFilds{
-    -fx-padding: 10 20 10px 10px;
-    -fx-background-color: transparent;
-    -fx-prompt-text-fill: white;
+    -fx-padding: 10 20 10px 10px;/* Inner spacing: top, right, bottom, left */
+    -fx-background-color: transparent;/* No background color */
+    -fx-prompt-text-fill: white;/* White color for placeholder text */
 
 }
 
+/* Sign-up button with rounded corners, border, and no background fill */
 .buttonSignUp{
-    -fx-background-radius: 20px 20px 20px 20px;
+    -fx-background-radius: 20px 20px 20px 20px;/* Uniformly rounded corners */
     -fx-border-width: 1px;
     -fx-border-color: white;
 
