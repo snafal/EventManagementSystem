@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-/* Main AnchorPane acting as the root container */
+<!--Main AnchorPane acting as the root container-->
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="colorBackground" stylesheets="@StyleSheets/app.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.AppController">
    <children>
-       /* Inner AnchorPane for login section */
+       <!-- Inner AnchorPane for login section -->
       <AnchorPane layoutX="37.0" layoutY="32.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="362.0" style="-fx-background-radius: 50 30 30 30;" styleClass="colorBackground2" stylesheets="@StyleSheets/app.css">
          <children>
-            /* TextField for entering the username */
+            <!--TextField for entering the username -->
             <TextField fx:id="userName" layoutX="69.0" layoutY="184.0" opacity="0.82" prefHeight="50.0" prefWidth="237.0" promptText="User Name">
                <font>
                   <Font name="Cambria" size="17.0" />
@@ -25,13 +25,13 @@
                <font>
                   <Font name="Ebrima" size="23.0" />
                </font></JFXButton>
-             /* Signup button */
+             <!-- Signup button -->
             <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="353.0" onAction="#signupbuttonAction" prefHeight="58.0" prefWidth="123.0" style="-fx-background-radius: 30 10 30 30;" text="Signup" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Ebrima" size="23.0" />
                </font>
             </JFXButton>
-             /* Label to display the team name */
+           <!-- Label to display the team name -->
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="134.0" layoutY="455.0" prefHeight="40.0" prefWidth="94.0" text="Team 404 " textFill="WHITE">
                <font>
                   <Font name="Century" size="11.0" />
@@ -49,7 +49,7 @@
             </Label>
             <PasswordField fx:id="password" layoutX="65.0" layoutY="259.0" prefHeight="50.0" prefWidth="245.0" promptText="Password" />
 
-            /* Label to display error messages */
+            <!-- Label to display error messages -->
             <Label fx:id="errorMessagelable" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="148.0" prefHeight="30.0" prefWidth="327.0" textAlignment="CENTER" textFill="RED">
                <font>
                   <Font name="Lucida Fax Demibold" size="12.0" />
@@ -57,9 +57,9 @@
             </Label>
          </children>
       </AnchorPane>
-      /* Close button for the application (hidden initially) */
+      <!-- Close button for the application (hidden initially) -->
       <JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="565.0" layoutY="-1.0" minWidth="34.0" onAction="#handleCloseButtonAction" prefHeight="30.0" prefWidth="34.0" ripplerFill="BLACK" styleClass="colorBackground" text="X" visible="false" />
-      /* ImageView to display a background or decorative image */
+      <!-- ImageView to display a background or decorative image -->
       <ImageView accessibleRole="BUTTON" fitHeight="372.0" fitWidth="351.0" layoutX="435.0" layoutY="114.0" smooth="false">
          <image>
             <Image url="@Media/LandingImage.png" />
