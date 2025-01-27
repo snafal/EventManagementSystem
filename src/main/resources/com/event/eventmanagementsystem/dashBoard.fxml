@@ -14,8 +14,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<!-- Root AnchorPane for the entire dashboard layout -->
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="mainAncorPane" stylesheets="@StyleSheets/dashbord.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.event.eventmanagementsystem.DashBoardController">
    <children>
+ <!-- Left side panel with welcome and logo -->
       <AnchorPane prefHeight="600.0" prefWidth="359.0" styleClass="rootColour" stylesheets="@StyleSheets/dashbord.css">
          <children>
             <Label alignment="CENTER" layoutX="50.0" layoutY="73.0" prefHeight="28.0" prefWidth="259.0" text="Welcome " textAlignment="CENTER" textFill="#403f3f">
@@ -23,11 +25,13 @@
                   <Font name="Old English Text MT" size="34.0" />
                </font>
             </Label>
+            <!-- Image logo for the event system -->
             <ImageView fitHeight="331.0" fitWidth="359.0" layoutX="14.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Media/_5b9f7a4f-24ba-497c-99e2-4cb7a0d34126-removebg-preview.png" />
                </image>
             </ImageView>
+         <!-- Texts for description and team info -->
             <Label alignment="CENTER" layoutX="40.0" layoutY="438.0" prefHeight="28.0" prefWidth="279.0" text="Crafting Memorable Moments" textAlignment="CENTER" textFill="#403f3f">
                <font>
                   <Font name="Lucida Handwriting Italic" size="15.0" />
@@ -41,13 +45,16 @@
             <JFXButton layoutX="139.0" layoutY="543.0" onAction="#backToLogin" styleClass="button1" stylesheets="@StyleSheets/dashbord.css" text="LOG OUT" textFill="WHITE" />
          </children>
       </AnchorPane>
+ <!-- Right side overlay panel for selecting event details -->
       <AnchorPane layoutX="375.0" layoutY="21.0" prefHeight="558.0" prefWidth="410.0" styleClass="overlay" stylesheets="@StyleSheets/dashbord.css">
          <children>
+<!-- Event category selection label -->
             <Label layoutX="40.0" layoutY="24.0" text="Select Event category" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
+<!-- Dropdown for event category -->
             <JFXComboBox fx:id="eventCategorymenu" layoutX="158.0" layoutY="65.0" onAction="#setEventMenu" onInputMethodTextChanged="#setEventMenu" onScrollFinished="#setEventMenu" prefHeight="34.0" prefWidth="200.0" promptText="Category" />
             <Label layoutX="40.0" layoutY="118.0" text="Select Event " textFill="#403f3f">
                <font>
@@ -55,22 +62,26 @@
                </font>
             </Label>
             <JFXComboBox fx:id="eventmenu" layoutX="158.0" layoutY="146.0" prefHeight="34.0" prefWidth="200.0" promptText="Event" />
+           <!-- Budget range selection -->
             <Label layoutX="45.0" layoutY="286.0" text="Pick your Budget Range" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
+ <!-- Date selection label -->
             <Label layoutX="45.0" layoutY="407.0" text="Select Date" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
                </font>
             </Label>
+ <!-- Date picker for selecting date -->
             <DatePicker fx:id="datePicker" layoutX="159.0" layoutY="448.0" onAction="#getDate" stylesheets="@StyleSheets/dashbord.css">
                <styleClass>
                   <String fx:value="calendar-cell" />
                   <String fx:value="date-picker-calendar" />
                </styleClass>
             </DatePicker>
+<!-- Radio buttons for budget selection -->
             <JFXRadioButton fx:id="radioButton3" layoutX="119.0" layoutY="380.0" onAction="#getbudget" prefHeight="18.0" prefWidth="122.0" text="&lt; LKR 5,00,000">
                <toggleGroup>
                   <ToggleGroup fx:id="budgetRange" />
@@ -87,6 +98,7 @@
                   <Font name="Copperplate Gothic Light" size="28.0" />
                </font>
             </JFXButton>
+<!-- Attendees count input -->
             <Label layoutX="40.0" layoutY="206.0" text="Capacity (attendees)" textFill="#403f3f">
                <font>
                   <Font name="Impact" size="22.0" />
