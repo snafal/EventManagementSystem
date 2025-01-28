@@ -14,10 +14,12 @@
     -fx-background-color: transparent;
 }
 
-/* Adding a light border to calendar cells inside the DatePicker */
+/* Styles the calendar cells within the DatePicker component to have a light border */
+/* Targets the calendar grid's individual cells to improve visual clarity */
 .datepicker > .date-picker-calendar > .calendar-grid > .calendar-cell {
-    -fx-border-color: lightgray; /* Add a light border for cell outlines */
+    -fx-border-color: lightgray; /* Sets the border color to light gray for a subtle outline */
 }
+
 
 /* Overlay effect with a semi-transparent purple background and rounded corners */
 .overlay {
