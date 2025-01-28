@@ -18,10 +18,10 @@
 
 }
 
-/* Sign-up button with rounded corners, border, and no background fill */
-.buttonSignUp{
-    -fx-background-radius: 20px 20px 20px 20px;/* Uniformly rounded corners */
-    -fx-border-width: 1px;
-    -fx-border-color: white;
-
+/* Styles the sign-up button to have rounded corners, a white border, and no background fill */
+/* Ensures the button appears minimalistic and visually appealing */
+.buttonSignUp {
+    -fx-background-radius: 20px; /* Creates evenly rounded corners with a 20px radius */
+    -fx-border-width: 1px;      /* Sets a thin border width for a clean appearance */
+    -fx-border-color: white;    /* Defines the border color as white for contrast */
 }
