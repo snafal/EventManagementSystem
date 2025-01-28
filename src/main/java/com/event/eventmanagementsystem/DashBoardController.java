@@ -69,12 +69,13 @@ public class DashBoardController implements Initializable {
         String getEventCategory = "Select categoryName from eventcategory  ";
 
         try {
+            // Create a statement object to execute the query
             Statement statement = dbConnection.createStatement();
             ResultSet resultSet = statement.executeQuery(getEventCategory);
 
-
+            // Initialize a list to store event category names
             ArrayList<String> eventCategoryList = new ArrayList<>();
-
+            // Iterate through the result set and retrieve each category name
             while (resultSet.next()) {
                 String eventName = resultSet.getString("categoryName");
                 eventCategoryList.add(eventName);
